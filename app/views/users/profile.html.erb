@@ -1,0 +1,8 @@
+<%provide(:title, "Profile") %>
+<div class = "row">
+<span class="small-2 columns left"><%= label_tag "Name" %></span>
+<span class="small-2 columns left"><%= @user.name  %></span>
+</div>
+<div class="row">
+	<%= link_to "Add Reminder" , new_todo_path, method: "get", class: "small radius button"%>
+</div>
