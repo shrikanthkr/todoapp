@@ -1,4 +1,88 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "foundation/variables";
+@import "foundation/components/global";
+@import "foundation/components/buttons";
 
+.top-bar{
+	border-bottom: 2px solid #569855;
+}
+.signup{
+	background-color: #F5F5F5;
+	margin-top: 20px;
+	padding:20px;
+	padding-bottom: 20px;
+	border-right : 2px solid #F5F5F5;
+	border-radius: 10px;
+}
+.signup label{
+	font-weight : 400;
+	font-size : 15px;
+	padding-bottom: 4px;	
+}
+.signup_tag label{ 
+	width:100%; 
+	padding : 15px 15px 0px 15px;
+	font-weight: 800;
+	font-size: 30px;
+	color:#000000;
+	//background-color:#2ba6cb;
+}
+.signup_comment label{
+	font-weight: 400;
+	font-size: 15px;
+	color:grey;
+	margin-bottom: 10px;
+	margin-left: 60px;
+	//background-color:#2ba6cb;
+}
+.center{
+	text-align:center;
+}
+
+.custom-button{
+	@extend  .button;
+	border:none;
+	background-color: #569855;
+}
+.custom-button :hover{
+	@extend  .button;
+	border:none;
+	background-color: #569855;
+}
+.horizontal-divider{
+	padding: 0px 20px 0px 20px;
+	border-bottom: 2px solid #B7B7B7;
+	margin-bottom: 10px;
+	margin-top: -15px;
+}
+.error-block{
+	text-align: center;
+	color:red;
+	margin: 6px 6px 6px 0px;
+	background-color: #FCEEEE;
+}
+.app-name-to{
+	color:white;
+	padding: 20px 0px 0px 20px;
+	font-weight: 800;
+	font-size: 20px;
+	vertical-align: center;
+}
+.app-name-tu{
+	color:#00C4FF;
+	font-weight: 800;
+	font-size: 30px;
+	vertical-align: center;
+}
+.app-name-do{
+	color:white;
+	font-weight: 800;
+	font-size: 20px;
+	vertical-align: center;
+}
+.notice{
+	padding: 5px 5px 5px 5px ;
+	background-color: #C9F2C9;
+}

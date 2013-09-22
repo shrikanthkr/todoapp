@@ -4,5 +4,6 @@
 <span class="small-2 columns left"><%= @user.name  %></span>
 </div>
 <div class="row">
-	<%= link_to "Add Reminder" , new_todo_path, method: "get", class: "small radius button"%>
+	<%= link_to "Add Reminder" , todos_new_path, method: "get", class: "small radius button"%>
+	<%= link_to "Show Reminders" , todos_path, method: "get", class: "small radius button"%>
 </div>

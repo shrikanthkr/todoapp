@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 20130921051047) do
 
   create_table "todos", force: true do |t|
+    t.integer  "user_id"
     t.string   "title"
     t.text     "description"
     t.date     "to_date"

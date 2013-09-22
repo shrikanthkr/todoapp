@@ -1,0 +1,8 @@
+<%@todos.each do |todo|%>
+<%= todo.title%>
+<%= todo.description%>
+<%= todo.to_date%><br>
+<%= todo.to_time.hour%>:<%= todo.to_time.min%>
+<%= link_to 'delete ',destroy_todo_path(todo.id), :method => 'delete' %>
+<br>
+<%end%>

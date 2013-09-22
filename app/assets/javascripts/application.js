@@ -15,5 +15,9 @@
 //= require foundation
 //= require turbolinks
 //= require_tree .
+//= require jquery.ui.datepicker
 
-$(function(){ $(document).foundation(); });
+$(function(){
+ $(document).foundation(); 
+ $( '#todo_to_date' ).datepicker();
+});

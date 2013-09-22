@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
 	def new
-
+		render layout: "home"
 	end
 	def create
 		user = User.authenticate(params[:email],params[:password])
@@ -16,6 +16,7 @@ class SessionsController < ApplicationController
 	end
 	def destroy
 		session[:userid] = nil
+		flash[:notice]= "Signed out"
 		redirect_to root_url
 	end
 
