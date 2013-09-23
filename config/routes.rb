@@ -5,7 +5,7 @@ TodoApp::Application.routes.draw do
   match "login" , to: "sessions#new", via: "get"
   match "users/profile", to: "users#profile", via: "get"
   match "users/", to: "users#index", via: "get"
-  match "sessions/", to: "sessions#destroy", via: "delete", as: "sessions_delete"
+  match "sessions/", to: "sessions#destroy", via: "delete", as: "session_delete"
 
   scope(:path => '/users') do
     # the rest of your routes go here

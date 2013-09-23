@@ -26,9 +26,9 @@
 
 			<%= f.submit :save, value: "Sign Up",class: " medium custom-button expand" %>
 			<% end %>
-			<div class="horizontal-divider">
+		<!--	<div class="horizontal-divider">
 			</div>
-			<%= link_to "Sign In",new_session_path , class: " medium custom-button expand"%>
+			<a class="medium custom-button expand" id="signin_main">Sign In</a>-->
 		</div>
 		<%flash.each do |name,msg|%>
 		<div> <%=msg%></div>
@@ -41,3 +41,13 @@
 	</div>
 
 </div>
+<div id="myModal" class="reveal-modal small signup">
+			<%= form_tag sessions_path do%>
+			<%=label_tag :email%><br>
+			<%= text_field_tag :email, params[:email]%>
+			<%=label_tag :password%><br>
+			<%= password_field_tag :password, params[:password]%>
+			<%=submit_tag "Login", class: "medium custom-button"%>
+			<%end%>
+</div>
+

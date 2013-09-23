@@ -9,13 +9,13 @@ class TodosController < ApplicationController
 
 	end
 	def create
-
-		if User.find(session[:userid]).todos.create(todo_params)
+		@todo = User.find(session[:userid]).todos.build(todo_params)
+		if @todo.save
 			flash[:notice] = "saved"
 			redirect_to users_profile_path
 		else
 			flash.now.alert = "not saved"
-			redirect_to root_url
+			redirect_to users_profile_path
 		end
 
 	end
